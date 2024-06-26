@@ -1,0 +1,146 @@
+.hero-section {
+    padding: 180px 0 93px;
+    background-image: url(../images/hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: bottom center;
+    background-attachment: fixed;
+}
+
+.hero {
+    @include display($items:start, $space:space-between,$gap:0px,);
+
+}
+
+.form {
+    width: 449px;
+    padding: 25px;
+    border-radius: 10px;
+    backdrop-filter: blur(30px);
+    background-color: rgba(58, 58, 58, 0.5);
+}
+.form__title {
+    @include textStyle ($clr:$clr-white, $fs:30px, $fw:700, $lh:36px, $ls:0%,$tt: capitalize, $mb:0px);
+
+}
+.form__text {
+    @include textStyle ($clr:$clr-white, $fs:16px, $fw:400, $lh:19px, $ls:0%,$tt: capitalize, $mb:0px);
+    opacity: 0.8;
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(224, 224, 224);
+    
+}
+.form__label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.form__label-content {
+    @include textStyle ($clr:$clr-white, $fs:15px, $fw:400, $lh:18px, $ls:0%,$tt: capitalize, $mb:8px);
+}
+.form__input {
+    @include textStyle ($clr:$clr-black, $fs:16px, $fw:400, $lh:19px, $ls:0%,$tt: capitalize, $mb:0px);
+    outline: none;
+    border: none;
+    padding: 18px 0px 18px 46px;
+    background-color: $clr-white;
+    border-radius: 12px;
+
+    &::placeholder{
+        @include textStyle ($clr:rgba(0, 0, 0, 0.38), $fs:16px, $fw:400, $lh:19px, $ls:0%,$tt: capitalize, $mb:0px);
+    }
+    background-image: url(../images/address-img.svg);
+    background-repeat: no-repeat;
+    background-size: 24px 24px;
+    background-position: 18px center;
+}
+.form__label:last-child  > .form__input:last-child {
+    background-image: url(../../images/data-img.svg);
+}
+
+.form__radio-wrapper {
+    @include display($items:center, $space:space-between,$gap:0px,);
+    padding-bottom: 25px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(224, 224, 224, 1);
+}
+.form__radio-title{
+    @include textStyle ($clr: $clr-white, $fs:15px, $fw:400, $lh:18px, $ls:0%,$tt: capitalize, $mb:8px);
+    display: inline-block;
+}
+.form__radio-label {
+    @include display($items:center, $space:start,$gap:12px,);
+    width: 192px;
+    padding: 15px;
+    background-color: $clr-white;
+    border-radius: 12px;
+}
+.form__checked-radio:checked ~ .form__custum-radio {
+    background-color: rgb(109, 181, 205);
+}
+.form__custum-radio {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    border: 1px solid rgb(211, 211, 211);
+}
+.form__radio-content {
+    @include textStyle ($clr: rgba(0, 0, 0, 0.87), $fs:17px, $fw:400, $lh:21px, $ls:0%,$tt: capitalize, $mb:0px);
+
+}
+.form__btn{
+    width: 100%;
+    padding: 17px 0;
+    text-align: center;
+    background-color: $clr-orange;
+    border-radius: 8px;
+    border: 1px solid $clr-orange;
+    @include textStyle ($clr: $clr-white, $fs:17px, $fw:500, $lh:20px, $ls:0%,$tt: none, $mb:0px);
+    transition: 0.3s all linear;
+    cursor: pointer;
+    &:hover{
+        background-color: transparent;
+        color:$clr-orange;
+    }
+    &:active{
+        cursor: grabbing;
+        opacity: 0.7;
+    background-color: $clr-orange;
+    color: $clr-white;
+    }
+}
+
+
+.hero__content-wrapper {
+    padding-top: 48px;
+    width: 546px;
+}
+.hero__toptext {
+    padding-left: 34px;
+    @include textStyle ($clr: $clr-white, $fs:14px, $fw:500, $lh:17px, $ls:0%,$tt: uppercase, $mb:11px);
+    position: relative;
+    &:before{
+        content: "";
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        bottom: 0;
+        top: 0;
+        left:  0;
+        margin: auto 0;
+        background-image: url(../images/star-icon-img.svg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+}
+.hero__title {
+    @include textStyle ($clr: $clr-white, $fs:56px, $fw:700, $lh:68px, $ls:0%,$tt: capitalize, $mb:20px);
+    
+
+}
+.hero__bottomtext{
+    @include textStyle ($clr: $clr-white, $fs:20px, $fw:400, $lh:24px, $ls:0%,$tt: capitalize, $mb:11px);
+
+}

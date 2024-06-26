@@ -1,0 +1,54 @@
+.pro__section {
+    padding:65px 0 ;
+    background-image: url(../../images/Background-pro.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.pro {
+    @include display($items:center, $space:space-between,$gap:0px,);
+}
+.pro__content-wrapper {
+    width: 334px;
+}
+.pro__title {
+    @include textStyle ($clr: $clr-white, $fs:38px, $fw:600, $lh:40px, $ls:0%,$tt: none, $mb:20px);
+
+}
+.pro__text {
+    @include textStyle ($clr: $clr-white, $fs:16px, $fw:400, $lh:19px, $ls:0%,$tt: none, $mb:0px);
+}
+.pro__list {
+    @include display($items:center, $space:start,$gap:54px,);
+}
+.pro__item {
+    width: 102px;
+    text-align: center;
+}
+.pro__item:nth-child(2){
+    width: 120px;
+}
+.pro__item:nth-child(3){
+    width: 142px;
+}
+.pro__item:nth-child(4){
+    width: 137px;
+}
+.pro__icon {
+    display: block;
+    margin: 0 auto;
+    width: 48px;
+    height: 48px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    background-color: rgba(217, 217, 217, 1);
+}
+.pro__result {
+    @include textStyle ($clr: $clr-white, $fs:50px, $fw:600, $lh:60px, $ls:0%,$tt: none, $mb:15px);
+    display: block;
+
+}
+.pro__item-text {
+    @include textStyle ($clr: $clr-white, $fs:16px, $fw:400, $lh:19px, $ls:0%,$tt: none, $mb:15px);
+
+}

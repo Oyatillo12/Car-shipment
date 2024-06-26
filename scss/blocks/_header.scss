@@ -1,0 +1,48 @@
+.site-header {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    width: 100%;
+    backdrop-filter:blur(15px) ;
+    z-index: 99;
+}
+
+.header{
+    @include display($items:center, $space:space-between,$gap:0px);
+}
+.navbar{
+    @include display($items:center, $space:start,$gap:50px);
+}
+.navbar__list{
+    @include display($items:center, $space:start,$gap:25px);
+}
+
+
+.navbar__link{
+    @include textStyle ($clr:$clr-white, $fs:16px, $fw:500, $lh:19px, $ls:0%,$tt: uppercase, $mb:0px);
+    transition: 0.3s color linear;
+    &:hover{
+        color: $clr-orange;
+    }
+    &:active {
+        cursor: grabbing;
+        opacity: 0.7;
+    }
+
+}
+.navbar__phone-number {
+    padding-right: 48px;
+    @include textStyle ($clr:$clr-white, $fs:16px, $fw:500, $lh:19px, $ls:0%,$tt: uppercase, $mb:0px);
+    @include display($items:center, $space:start,$gap:10px);
+    
+    & > span{
+        transition: 0.3s color linear;
+    }
+    &:hover > span{
+        color: $clr-orange;
+    }
+    &:active > span{
+        cursor: grabbing;
+        opacity: 0.7;
+    }
+}

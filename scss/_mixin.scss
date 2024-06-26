@@ -1,0 +1,18 @@
+
+@mixin display($items:center, $space:space-between,$gap:0px) {
+    display: flex;
+    align-items: $items;
+    justify-content: $space;
+    gap: $gap;
+}
+
+
+@mixin textStyle ($clr, $fs, $fw, $lh, $ls,$tt,$mb){
+    margin-bottom:$mb;
+    color: $clr;
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: $lh;
+    letter-spacing: $ls;
+    text-transform: $tt;
+}
