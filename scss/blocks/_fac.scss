@@ -1,0 +1,73 @@
+.faq-section {
+    padding: 80px 0 75px;
+}
+
+
+.fac__wrapper {
+    width: 527px;
+    margin: 0 auto;
+    padding-bottom: 80px;
+    text-align: center;
+}
+.fac__title {
+    @include textStyle ($clr:rgba(24, 47, 67, 1), $fs:38px, $fw:700, $lh:45px, $ls:0%,$tt: capitalize, $mb:15px);
+}
+.fac__title--orange{
+    color: $clr-orange;
+}
+.fac__text {
+    @include textStyle ($clr:rgba(0, 0, 0, 0.68), $fs:16px, $fw:400, $lh:24px, $ls:0%,$tt:none, $mb:0px);
+}
+.fac__list {
+    width: 732px;
+    margin: 0 auto;
+}
+.fac__item{
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid rgba(217, 217, 217, 1);
+    overflow-y: hidden;
+}
+.dropdown__content{
+    @include display($items:center, $space:space-between,$gap:0px,);
+   
+}
+
+.fac__subtitle {
+    cursor: pointer;
+    @include textStyle ($clr:rgba(0, 0, 0, 0.87), $fs:18px, $fw:600, $lh:22px, $ls:0%,$tt:none, $mb:0px);
+}
+
+.line {
+    display: flex;
+    width: 17px;
+    height: 2px;
+    position: relative;
+    transition: all 0.3s linear;
+}
+.line__plus-minus {
+    display: inline-block;
+    position: absolute;
+    width: 17px;
+    height: 2px;
+    background-color: rgba(61, 61, 61, 1);
+    transition: all 0.3s linear;
+}
+.line__plus-minus:first-child{
+    transform: rotate(90deg);
+}
+.dropdown__hide-wrapper{
+    @include textStyle ($clr:rgba(0, 0, 0, 0.68), $fs:16px, $fw:400, $lh:24px, $ls:0%,$tt:none, $mb:0px);
+    padding-top: 0px;
+    height: 0;
+    opacity: 0;
+    transition: all 0.3s linear;
+}
+.open{
+    padding-top: 13px;
+    height: 72px;
+    opacity: 1;
+}
+.minus{
+    transform: rotate(0deg) !important;
+}

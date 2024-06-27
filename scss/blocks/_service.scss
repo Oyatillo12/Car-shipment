@@ -31,6 +31,7 @@
     overflow: hidden;
     background-color: $clr-white;
     box-shadow: 0 0 4px 0px gray;
+    cursor: pointer;
 
     &:hover > .service__img{
         height: 238px;

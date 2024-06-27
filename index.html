@@ -44,7 +44,7 @@
         <section class="hero-section">
             <div class="container">
                 <div class="hero">
-                    <form class="hero__form form" action="https:echo.htmlacademy.ru" method="post" autocomplete="off">
+                    <form class="hero__form form" action="https://echo.htmlacademy.ru" method="post" autocomplete="off">
                         <srtrong class="form__title">Shipping Cost Calculator</srtrong>
                         <p class="form__text">Get your estimate quote in seconds</p>
                         <label class="form__label">
@@ -63,12 +63,16 @@
                         <div class="form__radio-wrapper">
                             <label class="form__radio-label">
                                 <input class="form__checked-radio visually-hidden" name="type" type="radio" required aria-label="type">
-                                <div class="form__custum-radio"></div>
+                                <div class="form__custum-radio">
+                                    <div class="form__custum-radio-inner"></div>
+                                </div>
                                 <span class="form__radio-content">Open</span>
                             </label>
                             <label class="form__radio-label">
                                 <input class="form__checked-radio visually-hidden" name="type" type="radio" required aria-label="type">
-                                <div class="form__custum-radio"></div>
+                                <div class="form__custum-radio">
+                                    <div class="form__custum-radio-inner"></div>
+                                </div>
                                 <span class="form__radio-content">Enclosed</span>
                             </label>
                         </div>
@@ -164,7 +168,7 @@
                 </ul>
             </div>
         </section>
-        <section class="pro__section">
+        <section class="pro-section">
             <div class="container">
                 <div class="pro">
                     <div class="pro__content-wrapper">
@@ -173,34 +177,253 @@
                     </div>
                     <ul class="pro__list">
                         <li class="pro__item">
-                            <span class="pro__icon"></span>
-                            <span class="pro__result">10K</span>
+                            <div class="pro__icon">
+                                <img class="pro__icon-img" src="./images/user-icon-img'.svg" alt="user icon img" width="30" height="30">
+                            </div>
+                            <strong class="pro__result"><span class="count-first">10</span>K</strong>
                             <p class="pro__item-text">Client Served</p>
                         </li>
                         <li class="pro__item ">
-                            <span class="pro__icon"></span>
-                            <span class="pro__result">23K</span>
+                            <div class="pro__icon">
+                                <img src="./images/cargo-ship.svg" alt="cargo ship img" width="30" height="30">
+                            </div>
+                            <strong class="pro__result"><span class="count-second">23</span>K</strong>
                             <p class="pro__item-text">Vehicle shipped</p>
                         </li>
                         <li class="pro__item">
-                            <span class="pro__icon"></span>
-                            <span class="pro__result">96%</span>
+                            <div class="pro__icon">
+                                <img class="pro__icon-img" src="./images/costumer.svg" alt="customer img" width="30" height="30"></div>
+                            <strong class="pro__result"> <span class="count-third">96</span>%</strong>
                             <p class="pro__item-text">Satisfied customer</p>
                         </li>
                         <li class="pro__item">
-                            <span class="pro__icon"></span>
-                            <span class="pro__result">7+</span>
+                            <div class="pro__icon">
+                                <img class="pro__icon-img" src="./images/settings-icon-img.svg" alt="settings icon img" width="30" height="30">
+                            </div>
+                            <strong class="pro__result"><span class="count-fourth">7</span>+</strong>
                             <p class="pro__item-text">Years in operation</p>
                         </li>
                     </ul>
                 </div>
             </div>
         </section>
+        <section class="about-section">
+            <div class="container">
+                <div class="about">
+                    <div class="about__us-wrapper">
+                        <h2 class="about__us-title">About <span>Us</span></h2>
+                        <p class="about__us-text">Optimum Auto Transport is a vehicle shipping company in the USA. We make sure that our professional drivers serve customers with very high quality. Our priorities are putting customers’ satisfaction first place.z</p>
+                        <img class="about__us-img" src="./images/trucks-about-img.png" alt="truck img" width="100%" height="100%">
+                    </div>
+                    <div class="about__missiom">
+                        <img class="about__missiom-img" src="./images/coworkers-img.png" alt="coworkers img" width="100%" height="100%">
+                        <div class="about__content-mission">
+                            <h2 class="about__missiom-title">Our <span>Mission</span></h2>
+                            <p class="about__missiom-text">Our Mission is to help people to ship their cars from state to state SAFE, FAST, and AFFORDABLE way. We make sure your vehicle will be picked up on time and delivered on time.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="method-section">
+            <div class="container method">
+                <div class="method__content-wrapper">
+                    <h2 class="method__title">Shipping <span>Method</span></h2>
+                    <p class="method__text">Car transportation services can fall under several different categories depending on the shipping company employed to move the car. Vehicle transport services may use any number of transportation methods to get a vehicle from one point to another.</p>
+                </div>
+                <div class="method__rail rail">
+                    <img class="rail__img" src="./images/rail-img.png" alt="rail transport img" width="542" height="297">
+                    <div class="rail__content-wrapper">
+                        <h3 class="rail__title">Rail Transport</h3>
+                        <p class="rail__text">Railway shipping companies focus on getting cars from one point to another using the vast interconnected rail network around the US. They are either shipped open-air or within freight containers. It's a pretty quick way of getting a car from one point to another, but the speed has its attached cost. Unfortunately, because of the complexities of rail transport, not every shipping company offers rail freight as an option.</p>
+                        <button class="rail__btn">Get Free Quotes</button>
+                    </div>
+                </div>
+                <div class="method__truck truck">
+                    <div class="truck__content-wrapper">
+                        <h3 class="truck__title">Truck Transport</h3>
+                        <p class="truck__text">One of the most well-known vehicle shipping services that you'll find is ordinary truck transport. It's a basic way to transport a car and takes a little more time. However, the vehicle gets to its destination safe and sound. It's also the most convenient method of moving a car between locations. Another advantage of a truck is that the truck can get right up to the final point before the owner gets the car.</p>
+                        <button class="truck__btn">Get Free Quotes</button>
+                    </div> 
+                    <img class="truck__img" src="./images/truck-img.png" alt="truck transport img" width="542" height="297">
+                    <button class="truck__most-btn">Most popular</button>
+                </div>
+                <div class="method__air air">
+                    <img class="air__img" src="./images/air-img.png" alt="air transport img" width="542" height="297">
+                    <div class="air__content-wrapper">
+                        <h3 class="air__title">Air Transport</h3>
+                        <p class="air__text">Another category of vehicle transport service is air transport. This is the fastest way to get a car from origin to destination, regardless of where in the US it is. On the other hand, air transport is much more expensive and may cost quite a lot, depending on where the car needs to be delivered. The safest way to move a car is by air, and there are many airports and airstrips across the state, so it's simple to discover one with a landing strip close to you.</p>
+                        <button class="air__btn">Get Free Quotes</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="faq-section">
+            <div class="container fac">
+                <div class="fac__wrapper">
+                    <h3 class="fac__title"><span class="fac__title fac__title--orange">Frequently</span> Asked Questions</h3>
+                    <p class="fac__text">Need help? Here are the top questions asked by our Subscribers</p>
+                </div>
+                <ul class="fac__list">
+                    <li class="fac__item dropdown">
+                        <div class="dropdown__content">
+                        <h3 class="fac__subtitle">Is my vehicle insured during transport?</h3>
+                        <div class="fac__line line">
+                            <span class="line__plus-minus"></span>
+                            <span class="line__plus-minus"></span>
+                        </div>
+                        </div>
+                        <div class="dropdown__hide-wrapper">
+                            <p>Yes, you can put your luggage inside your car up to 100lbs in a box or a single piece of luggage that will be in the trunk of the car during transport for free, for each other 100lbs will be subject to the extra charge by the carrier.</p>
+                        </div>
+                    </li>
+                    <li class="fac__item dropdown2">
+                        <div class="dropdown__content">
+                        <h3 class="fac__subtitle">Can I Store Luggage in My Car When It is Being Shipped?</h3>
+                        <div class="fac__line2 line">
+                            <span class="line__plus-minus line__plus-minus2"></span>
+                            <span class="line__plus-minus"></span>
+                        </div>
+                        </div>
+                        <div class="dropdown__hide-wrapper dropdown__hide-wrapper2">
+                            <p>Yes, you can put your luggage inside your car up to 100lbs in a box or a single piece of luggage that will be in the trunk of the car during transport for free, for each other 100lbs will be subject to the extra charge by the carrier.</p>
+                        </div>
+                    </li>
+                    <li class="fac__item dropdown3">
+                        <div class="dropdown__content">
+                        <h3 class="fac__subtitle">When is the vehicle going to be picked-up?</h3>
+                        <div class="fac__line2 line">
+                            <span class="line__plus-minus line__plus-minus3"></span>
+                            <span class="line__plus-minus"></span>
+                        </div>
+                        </div>
+                        <div class="dropdown__hide-wrapper dropdown__hide-wrapper3">
+                            <p>Yes, you can put your luggage inside your car up to 100lbs in a box or a single piece of luggage that will be in the trunk of the car during transport for free, for each other 100lbs will be subject to the extra charge by the carrier.</p>
+                        </div>
+                    </li>
+                    <li class="fac__item dropdown4">
+                        <div class="dropdown__content">
+                        <h3 class="fac__subtitle">How Do I Pay for My Auto Shipping?</h3>
+                        <div class="fac__line line">
+                            <span class="line__plus-minus line__plus-minus4"></span>
+                            <span class="line__plus-minus"></span>
+                        </div>
+                        </div>
+                        <div class="dropdown__hide-wrapper dropdown__hide-wrapper4">
+                            <p>Yes, you can put your luggage inside your car up to 100lbs in a box or a single piece of luggage that will be in the trunk of the car during transport for free, for each other 100lbs will be subject to the extra charge by the carrier.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact">
+                    <div class="contact__wrapper">
+                        <h2 class="contact__title">Get in Touch</h2>
+                        <p class="contact__text">Our professional agents will get in touch with quickly.</p>
+                        <a class="contact__link" href="tel:+15132642969">
+                            <img src="./images/phone-icon-img.svg" alt="phone icon img" width="38" height="38">
+                            <div class="contact__link-tel-wrapper">
+                                <p>Phone Number</p>
+                                <span>+1 (513) 264-2969</span>
+                            </div>
+                        </a>
+                        <span class="contact_line"></span>
+                        <a class="contact__link" href="email:+15132642969">
+                            <img src="./images/email-icon.svg" alt="email icon img" width="38" height="38">
+                            <div class="contact__link-tel-wrapper">
+                                <p>Email address</p>
+                                <span>+1 (513) 264-2969</span>
+                            </div>
+                        </a>
+                    </div>
+                    <form class="contact__form formcnt" action="https://echo.htmlacademy.ru" method="post" autocomplete="off">
+                        <strong class="formcnt__title" >Contact us</strong>
+                        <label class="formcnt__label">
+                            <span class="formcnt__name">Full name</span>
+                            <input class="formcnt__input" name="user_name" type="text" placeholder="Write your full name" required>
+                        </label>
+                        <div  class="formcnt__wrapper">
+                            <label class="formcnt__label-infomation">
+                                <span class="formcnt__name">Email address</span>
+                                <input class="formcnt__input" name="user_email" type="email" placeholder="Write your email address" required>
+                            </label>
+                            <label class="formcnt__label-infomation">
+                                <span class="formcnt__name">Phone number</span>
+                                <input class="formcnt__input" name="user_tel" type="tel" placeholder="Your phone number" required>
+                            </label>
+                        </div>
+                        <label class="formcnt__last-label" >
+                            <span class="formcnt__name">Brief informations</span>
+                            <textarea class="contact__comment" name="user_comment" placeholder="Comment" rows="5" ></textarea>
+                        </label>
+                        <button class="formcnt__btn" type="submit">Send</button>
+                    </form>
+                </div>
+            </div>
+        </section>
     </main>
     <footer class="site-footer">
         <div class="container">
-            <div class="footer"></div>
+            <div class="footer">
+                <div class="footer__logo-wrapper">
+                    <a class="footer__logo-link" href="./index.html">
+                        <img class="footer__logo-img" src="./images/logo-img.svg" alt="Footer logo img" width="245" height="43">
+                    </a>
+                    <p class="footer__logo-text">Transportation Services that you can trust</p>
+                    <p class="footer__logo-btmtext">Copyright ©  All rights reserved</p>
+                </div>
+                <div class="footer__service-wrapper">
+                    <strong class="footer__title" >Our Services</strong>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="#" class="footer__links">Car Shipments</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__links">Motorcycle shipments</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__links">Heavy Equipment</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__links">All Services</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__service-wrapper">
+                    <strong class="footer__title" >Shipping Methods</strong>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="#" class="footer__links">Rail Freight</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__links">Truck Transport</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__links">Air Transport</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__service-wrapper">
+                    <strong class="footer__title" >About Us</strong>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="#" class="footer__links">Our Company</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__links">F.A.Q.</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__links">Contact us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </footer>
+
+
+    <script src="./js/main.js"></script>
 </body>
 </html

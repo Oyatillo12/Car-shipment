@@ -1,0 +1,39 @@
+.about-section {
+    padding: 100px 0 96px;
+}
+
+.about {
+    @include display($items:start, $space:space-between,$gap:0px);
+}
+.about__us-wrapper {
+    width: 543px;
+    padding-top: 37px;
+}
+.about__us-title {
+    @include textStyle ($clr:rgba(0, 0, 0, 0.87), $fs:38px, $fw:700, $lh:46px, $ls:0%,$tt:capitalize, $mb:16px);
+    & > span{
+        color: $clr-orange;
+    }
+
+}
+.about__us-text {
+    @include textStyle ($clr:rgba(0, 0, 0, 0.68), $fs:16px, $fw:300, $lh:24px, $ls:0%,$tt:none, $mb:50px);
+}
+.about__missiom {
+    width: 543px;
+}
+.about__missiom-img {
+    margin-bottom: 50px;
+}
+.about__content-mission{
+    padding-left: 26px;
+}
+.about__missiom-title {
+    @include textStyle ($clr:rgba(0, 0, 0, 0.87), $fs:38px, $fw:700, $lh:46px, $ls:0%,$tt:capitalize, $mb:16px);
+    & > span{
+        color: $clr-orange;
+    }
+}
+.about__missiom-text {
+    @include textStyle ($clr:rgba(0, 0, 0, 0.68), $fs:16px, $fw:300, $lh:24px, $ls:0%,$tt:none, $mb:0px);
+}

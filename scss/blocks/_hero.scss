@@ -77,14 +77,25 @@
     background-color: $clr-white;
     border-radius: 12px;
 }
-.form__checked-radio:checked ~ .form__custum-radio {
-    background-color: rgb(109, 181, 205);
+.form__checked-radio:checked ~ .form__custum-radio{
+    border-color: $clr-orange;
+}
+.form__checked-radio:checked ~ .form__custum-radio > .form__custum-radio-inner {
+    background-color: $clr-orange;
 }
 .form__custum-radio {
     width: 26px;
     height: 26px;
     border-radius: 50%;
     border: 1px solid rgb(211, 211, 211);
+    position: relative;
+}
+.form__custum-radio-inner{
+    position:absolute;
+    inset: 4px;
+    border-radius: 50%;
+   
+
 }
 .form__radio-content {
     @include textStyle ($clr: rgba(0, 0, 0, 0.87), $fs:17px, $fw:400, $lh:21px, $ls:0%,$tt: capitalize, $mb:0px);

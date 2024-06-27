@@ -1,0 +1,130 @@
+.method-section {
+    padding: 75px 0 194px;
+    background-image: url(../images/method-bgtop.png), url(../images/method-bgbottom.png);
+    background-repeat: no-repeat;
+    background-size: 450px 112px, 450px 506px;
+    background-position: right top, bottom left;
+}
+.method__content-wrapper {
+    width: 798px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+    text-align: center;
+}
+.method__title {
+    @include textStyle ($clr: rgba(24, 47, 67, 1), $fs:38px, $fw:700, $lh:46px, $ls:0%,$tt: capitalize, $mb:15px);
+    & > span{
+        color: $clr-orange;
+    }
+}
+.method__text {
+    @include textStyle ($clr: rgba(0, 0, 0, 0.68), $fs:16px, $fw:400, $lh:24px, $ls:0%,$tt:none, $mb:0px);
+
+}
+
+.rail {
+    @include display($items:center, $space:space-between,$gap:0px,);
+    margin-bottom: 50px;
+}
+
+.rail__content-wrapper {
+    width: 545px;
+}
+.rail__title {
+    @include textStyle ($clr:rgba(0, 0, 0, 0.87), $fs:24px, $fw:600, $lh:29px, $ls:0%,$tt: capitalize, $mb:15px);
+
+}
+.rail__text {
+    @include textStyle ($clr:rgba(0, 0, 0, 0.87), $fs:16px, $fw:400, $lh:24px, $ls:0%,$tt: none, $mb:30px);
+}
+.rail__btn {
+    @include btnStyle($btnw:259px, $padding:15px, $bgbtn:transparent, $btnclr:rgba(0, 0, 0, 0.87), $btnFS:16px, $btnFW:500, $btnLH:19px, $btnLS:0%, $btnCase:uppercase, $btnMB: 0px,);
+    transition: 0.3s all linear;
+    cursor: pointer;
+    &:hover{
+        background-color: $clr-orange;
+        color: $clr-white;
+    }
+    &:active{
+        cursor: grabbing;
+        opacity: 0.6;
+        background-color: transparent;
+        color: rgba(0, 0, 0, 0.87);
+    }
+}
+
+.truck{
+    @include display($items:center, $space:space-between,$gap:0px,);
+    position: relative;
+    margin-bottom: 50px;
+}
+.truck__content-wrapper {
+    width: 540px;
+}
+.truck__title {
+    @include textStyle ($clr:rgba(0, 0, 0, 0.87), $fs:24px, $fw:600, $lh:29px, $ls:0%,$tt: capitalize, $mb:15px);
+}
+.truck__text {
+    @include textStyle ($clr:rgba(0, 0, 0, 0.87), $fs:16px, $fw:400, $lh:24px, $ls:0%,$tt: none, $mb:30px);
+}
+.truck__btn {
+    @include btnStyle($btnw:259px, $padding:15px, $bgbtn:transparent, $btnclr:rgba(0, 0, 0, 0.87), $btnFS:16px, $btnFW:500, $btnLH:19px, $btnLS:0%, $btnCase:uppercase, $btnMB: 0px,);
+    transition: 0.3s all linear;
+    cursor: pointer;
+    &:hover{
+        background-color: $clr-orange;
+        color: $clr-white;
+    }
+    &:active{
+        cursor: grabbing;
+        opacity: 0.6;
+        background-color: transparent;
+        color: rgba(0, 0, 0, 0.87);
+    }
+}
+.truck__most-btn {
+    @include textStyle ($clr:$clr-white, $fs:16px, $fw:600, $lh:19px, $ls:0%,$tt: capitalize, $mb:0px);
+    position: absolute;
+    width: 151px;
+    padding: 16px 0;
+    text-align: center;
+    background-color: $clr-orange;
+    border: none;
+    top: 20px;
+    right: 391px;
+    transition: all 0.3s linear;
+    &:hover{
+        background-color: rgba(194, 79, 29, 1);
+    }
+
+}
+
+
+.air {
+    @include display($items:center, $space:space-between,$gap:0px,);
+}
+
+.air__content-wrapper {
+    width: 535px;
+}
+.air__title {
+    @include textStyle ($clr:rgba(0, 0, 0, 0.87), $fs:24px, $fw:600, $lh:29px, $ls:0%,$tt: capitalize, $mb:15px);
+}
+.air__text {
+    @include textStyle ($clr:rgba(0, 0, 0, 0.87), $fs:16px, $fw:400, $lh:24px, $ls:0%,$tt: none, $mb:30px);
+}
+.air__btn {
+    @include btnStyle($btnw:259px, $padding:15px, $bgbtn:transparent, $btnclr:rgba(0, 0, 0, 0.87), $btnFS:16px, $btnFW:500, $btnLH:19px, $btnLS:0%, $btnCase:uppercase, $btnMB: 0px,);
+    transition: 0.3s all linear;
+    cursor: pointer;
+    &:hover{
+        background-color: $clr-orange;
+        color: $clr-white;
+    }
+    &:active{
+        cursor: grabbing;
+        opacity: 0.6;
+        background-color: transparent;
+        color: rgba(0, 0, 0, 0.87);
+    }
+}

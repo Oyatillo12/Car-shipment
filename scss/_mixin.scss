@@ -16,3 +16,13 @@
     letter-spacing: $ls;
     text-transform: $tt;
 }
+@mixin btnStyle($btnw, $padding, $bgbtn, $btnclr, $btnFS, $btnFW, $btnLH, $btnLS,$btnCase, $btnMB: 0px,){
+    width: $btnw ;
+    padding: $padding 0;
+    border-radius: 8px;
+    border: 1px solid $clr-orange;
+    text-align: center;
+    background-color: $bgbtn;
+    @include textStyle ($clr:$btnclr, $fs:$btnFS, $fw:$btnFW, $lh:$btnLH, $ls:$btnLS,$tt:$btnCase, $mb:$btnMB);
+
+}
